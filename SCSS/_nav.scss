@@ -1,0 +1,45 @@
+nav {
+	margin-top:10px;
+
+	li {
+		@include breakpoint ($large) {
+		display: inline-block;
+		text-align: center;
+		padding: 5px;
+
+			}
+	}	
+	a {
+		margin-bottom: 5px;
+		text-decoration: none;
+		list-style: none;
+		font-size: 1em;
+		color: $textColor;
+		border:1px solid $border;
+		display: block;
+		padding: 10px;
+		text-align:center;
+		text-transform: uppercase;
+		@include breakpoint ($large) {
+		border: none;
+		&:hover {
+			color: red;
+		}
+
+			}
+	}
+
+	ul {
+		list-style: none;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		
+		@include breakpoint ($large) {
+		margin: 0 auto;
+
+			}
+	}
+
+
+}

@@ -1,0 +1,40 @@
+
+
+
+.hero {
+	img {
+		max-width: 100%;
+		margin-left: -25%;
+	}
+	position: relative;
+
+	font-family: "Dynalight", cursive;
+	font-size: 2em;
+	color: white;
+
+	p {
+		position: absolute;
+		top: 12%;
+		right: 5%;
+		text-align: right;
+
+			@include breakpoint ($med) {
+			font-size: 1.8em;
+		}
+
+		@include breakpoint ($large) {
+			font-size: 2.8em;
+		
+		}
+	}
+
+background-image: url(../img/slaughter.svg);
+background-size: cover;
+
+
+
+
+}
+
+
+

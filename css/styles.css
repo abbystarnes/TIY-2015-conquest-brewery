@@ -1,0 +1,207 @@
+@import url("http://fonts.googleapis.com/css?family=Dynalight");
+.logo {
+  background-position: center;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px; }
+  .logo a {
+    background-image: url(../img/blob.jpg);
+    background-size: 110px 201px;
+    height: 110px;
+    width: 201px;
+    margin: 0 auto;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-indent: -9999px;
+    text-align: center;
+    padding: 0px;
+    margin-left: -12px; }
+
+header {
+  background-color: black;
+  width: 100%;
+  height: 110px;
+  display: block; }
+
+.hero {
+  position: relative;
+  font-family: "Dynalight", cursive;
+  font-size: 2em;
+  color: white;
+  background-image: url(../img/slaughter.svg);
+  background-size: cover; }
+  .hero img {
+    max-width: 100%;
+    margin-left: -25%; }
+  .hero p {
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    text-align: right; }
+    @media (min-width: 660px) {
+      .hero p {
+        font-size: 1.8em; } }
+    @media (min-width: 1120px) {
+      .hero p {
+        font-size: 2.8em; } }
+
+.beers {
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd; }
+  .beers article {
+    text-align: center;
+    padding: 20px 0px;
+    margin: 1% 1%;
+    border: 2px solid #ddd;
+    background-color: #eee; }
+    @media (min-width: 660px) {
+      .beers article {
+        width: 47%;
+        display: inline-block; } }
+  @media (min-width: 660px) and (min-width: 1120px) {
+    .beers article {
+      width: 31%; } }
+
+  .beers img {
+    width: 190px;
+    margin: 0 auto;
+    height: 150px; }
+  .beers h2 {
+    text-align: center; }
+  .beers h3 {
+    text-align: center;
+    padding-top: 5px;
+    border-top: 1px solid #ddd; }
+
+.beerDescriptions {
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd; }
+  .beerDescriptions article {
+    text-align: center;
+    padding: 20px 8%;
+    margin: 20px 1%;
+    background-color: #ddd; }
+  .beerDescriptions p {
+    text-align: left; }
+  .beerDescriptions ul {
+    text-decoration: none;
+    list-style: none;
+    text-align: left; }
+  .beerDescriptions img {
+    width: 190px;
+    margin: 0 auto;
+    height: 150px; }
+  .beerDescriptions h2 {
+    text-align: center; }
+  .beerDescriptions h3 {
+    text-align: center;
+    padding-top: 5px;
+    border-top: 1px solid #ddd; }
+
+body {
+  font-style: helvetica, sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+.invisible {
+  text-indent: -9999px;
+  display: none; }
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto; }
+
+nav {
+  margin-top: 10px; }
+  @media (min-width: 1120px) {
+    nav li {
+      display: inline-block;
+      text-align: center;
+      padding: 5px; } }
+  nav a {
+    margin-bottom: 5px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1em;
+    color: #555;
+    border: 1px solid #ddd;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase; }
+    @media (min-width: 1120px) {
+      nav a {
+        border: none; }
+        nav a:hover {
+          color: red; } }
+  nav ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+    @media (min-width: 1120px) {
+      nav ul {
+        margin: 0 auto; } }
+
+.list {
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 0px;
+  line-height: 2;
+  text-align: center;
+  padding-top: 20px; }
+  .list li:first-child {
+    font-weight: bold; }
+  .list ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+    padding-left: 0px; }
+    .list ul li {
+      line-height: 1.5; }
+  @media (min-width: 660px) {
+    .list {
+      text-align: left;
+      width: 48%;
+      float: left;
+      margin-right: 2%; } }
+
+@media (min-width: 660px) {
+  .hours {
+    clear: left; } }
+
+@media (min-width: 660px) {
+  .events {
+    margin-top: -165px; } }
+
+footer {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1em;
+  text-align: center; }
+  footer li {
+    display: inline;
+    padding: 5px;
+    font-size: 3em; }
+  footer a {
+    text-decoration: none;
+    padding: 15px 5px;
+    color: #555; }
+
+.fa-facebook-square {
+  color: #3b5998; }
+
+.fa-twitter-square {
+  color: #4099ff; }
+
+.footerLink {
+  display: none;
+  text-indent: -999px; }
+
+.testimonials {
+  display: inline-block; }
+
+/*# sourceMappingURL=styles.css.map */

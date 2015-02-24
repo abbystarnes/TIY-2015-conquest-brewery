@@ -1,0 +1,50 @@
+
+.list {
+	text-decoration: none;
+	list-style-type: none;
+	padding-left: 0px;
+	line-height: 2;
+	text-align: center;
+	padding-top: 20px;
+
+	li:first-child {
+		font-weight: bold;
+	}
+	ul {
+		text-decoration: none;
+		list-style-type: none;
+		padding: 10px;
+		padding-left: 0px;
+
+		li {
+			line-height: 1.5;
+		}
+	}
+
+
+	@include breakpoint ($med) {
+		text-align: left;
+		width: 48%;
+		float: left;
+		margin-right: 2%;
+		
+	}
+}
+
+
+
+.hours {
+	@include breakpoint ($med) {
+		clear:left;
+	}
+}
+
+.events {
+	@include breakpoint ($med) {
+		margin-top: -165px;
+	}
+}
+
+
+
+
