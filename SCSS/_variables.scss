@@ -1,9 +1,9 @@
 $textColor: #555;
 $border: #ddd;
-
 $small: 480px;
 $med:660px;
 $large: 1120px;
+$footerText: #666;
 
 @mixin breakpoint($point) {
 	@media (min-width: $point) {
