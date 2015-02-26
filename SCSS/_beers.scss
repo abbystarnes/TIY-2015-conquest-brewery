@@ -5,6 +5,7 @@
 				text-align: center;
 				padding-bottom: 20px;
 
+
 	p {
 			display: block;
 			margin: 5% 5%;
@@ -21,26 +22,29 @@
 
 	a {
 	
-				
+				border-radius: 5%;
+
 				padding: 20px 0px;
 				margin: 5% 5%;
 				border: 2px solid $border;
 				background-color: #eee;
-				width: 90%;
+				width: 35%;
 				display: inline-block;
+
+				img {
+					margin: 0 auto;
+					width: 100%;
+
+				}
 
 				@include breakpoint ($med) {
 				margin: 2%;
-				width: 42%;
+				width: 17.5%;
 				display: inline-block;
 				
 				}
 				
-				@include breakpoint ($large) {
-				margin: 2%;
-				width: 29%;
-			
-				}
+				
 			
 
 
@@ -72,53 +76,5 @@
 		padding-top: 40px;
 	}
 }
-
-
-.beerDescriptions {
-	article {
-	
-		text-align: center;
-		padding: 20px 8%;
-		margin: 20px 1%;
-		background-color: $border;
-
-		}
-
-	p {
-		text-align: left;
-	}	
-	
-	ul {
-		text-decoration: none;
-		list-style: none;
-		text-align: left;
-	}
-
-
-
-	img {
-		width: 190px;
-		margin: 0 auto;
-		height: 150px;
-	}
-
-	border-top: 2px solid $border;
-	border-bottom: 2px solid $border;
-	h2 {
-		text-align: center;
-	}
-	h3 {
-		text-align: center;
-		padding-top: 5px;
-		border-top: 1px solid $border;
-	}
-}
-
-
-
-
-
-
-
 
 

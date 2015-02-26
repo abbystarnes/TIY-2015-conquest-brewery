@@ -1,0 +1,81 @@
+.beerDescriptions {
+	article {
+		float: left;
+		text-align: center;
+		padding: 20px 8%;
+		margin: 0% 1%;
+		margin-bottom: 10px;
+		margin-top: 0px;
+		background-color: $border;
+		width: 100%;
+
+
+				@include breakpoint ($med) {
+				
+				width: 47%;
+				// display: inline-block;
+				
+				}
+
+				
+
+
+		}
+
+	p {
+		text-align: left;
+		font-size: .8em;
+	}	
+	
+	ul {
+		text-decoration: none;
+		list-style: none;
+		text-align: left;
+		font-size: .8em;
+	}
+
+
+
+	img {
+		width: 190px;
+		margin: 0 auto;
+		height: 150px;
+	}
+
+	border-top: 2px solid $border;
+	border-bottom: 2px solid $border;
+	h2 {
+		text-align: center;
+		display: block;
+	}
+	h3 {
+		display: block;
+		text-align: center;
+		padding-top: 5px;
+		border-top: 1px solid $border;
+	}
+}
+
+
+.quote {
+	font-style: italic;
+	line-height: 1.5;
+}
+
+
+.topper {
+
+	display: block;
+	width: 100%;
+	clear:both;
+	margin-bottom: 20px;
+
+	h3 {
+		padding-top: 20px;
+	}
+}
+
+
+
+
+
