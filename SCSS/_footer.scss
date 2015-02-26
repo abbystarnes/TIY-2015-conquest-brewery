@@ -1,28 +1,77 @@
 
 footer {
 	background-color: #111;
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+	color: white;
 
 .fa-facebook-square {
 	color:#3b5998;
+	font-size: 2.5em;
+	margin-right: 10px;
 }
 
 .fa-twitter-square {
 	color: #4099ff;
+	font-size: 2.5em;
 }
 
-margin-bottom: 200px;
+
 
 color: $footerText;
+
+li {
+	list-style: none;
+
+}
+
+a {
+	text-decoration: none;
+	color: red;
+}
 
 }
 
 
 .listItem {
 display: inline-block;
+margin-top: 20px;
+vertical-align: top;
+width: 100%;
+
+
+	 @include breakpoint ($med) {
+     	width: 32%;          
+    
+                
+     }
 	
 }
 
+.media li {
+	margin-bottom: 10px;
+}
 
+.footerList {
+	margin-bottom: 0px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+.hours {
+	padding-left: 0px;
+}
+
+.media {
+	padding-left: 0px;
+}
+
+.location {
+	padding-left: 0px;
+}
 
 
 

@@ -1,7 +1,16 @@
 body {
-	font-style: helvetica, sans-serif;
+	font-family: 'Oswald', sans-serif;
+	h2 {
+		text-transform: uppercase;
+	}
+	h3 {
+		text-transform: uppercase;
+	}
 
 }
+
+
+
 
 * {
 	box-sizing: border-box;
@@ -13,8 +22,9 @@ body {
 }
 
 .wrapper {
-	 width: 100%;
+	 width: 90%;
 	margin: 0 auto;
+	max-width: 1080px;
 }
 
 

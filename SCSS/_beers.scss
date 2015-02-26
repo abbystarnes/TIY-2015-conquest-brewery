@@ -1,34 +1,54 @@
 
 
 .beers {
-	article {
-	
+
 				text-align: center;
+				padding-bottom: 20px;
+
+	p {
+			display: block;
+			margin: 5% 5%;
+			
+			
+			
+			@include breakpoint ($med) {
+				margin: 2%;
+			
+				
+				}
+				
+			}	
+
+	a {
+	
+				
 				padding: 20px 0px;
-				margin: 1% 1%;
+				margin: 5% 5%;
 				border: 2px solid $border;
 				background-color: #eee;
-
+				width: 90%;
+				display: inline-block;
 
 				@include breakpoint ($med) {
-				width: 47%;
+				margin: 2%;
+				width: 42%;
 				display: inline-block;
 				
 				}
 				
 				@include breakpoint ($large) {
-				width: 31%;
+				margin: 2%;
+				width: 29%;
 			
 				}
-			}
+			
 
 
-		a {
 
 			text-decoration: none;
 			color: $textColor;
 			&:hover {
-				color: red;
+				background-color: red;
 			}		
 		
 		}
@@ -49,6 +69,7 @@
 		text-align: center;
 		padding-top: 5px;
 		border-top: 1px solid $border;
+		padding-top: 40px;
 	}
 }
 

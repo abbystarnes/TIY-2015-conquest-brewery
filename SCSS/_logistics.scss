@@ -1,8 +1,52 @@
 .events {
 	display: block;
+	padding-left: 0px;
+	max-width: 1080px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	
+	h2 {
+		margin-bottom: 0px;
+		text-align: center;
+	}
+
 	ul {
 		display: inline-block;
-		
+		padding-left: 0px;
+		vertical-align: top;
+
+		li {
+			display: block;
+			padding-left: 0px;
+			
+			width: 100%;
+			
+
+			text-align: center;
+			margin-top: 0px;
+
+
+
+		}
 	}
+		
+	li {
+		margin-top: 20px;
+		display: inline;
+		float:left;
+		vertical-align: top;
+		width: 100%;
+
+		@include breakpoint ($large) {
+		               
+		      width: 14.285%;
+		                
+		      }
+		text-align: center;
+	}
+
+	 
+
 
 }

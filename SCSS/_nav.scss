@@ -1,7 +1,11 @@
 nav {
+	padding-top: 30px;
 	display:none;
+	width: 100%;
 	@include breakpoint ($large) {
 		display: inline-block;
+		
+
 
 			}
 
@@ -10,9 +14,10 @@ nav {
 
 	li {
 		@include breakpoint ($large) {
-		display: inline-block;
+		display: inline;
+		float:left;
 		text-align: center;
-		padding: 5px;
+		width: 25%;
 
 			}
 	}	
