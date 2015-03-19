@@ -8,7 +8,7 @@
 
 	p {
 			display: block;
-			margin: 5% 5%;
+			margin: 5% 2%;
 			
 			
 			
@@ -25,10 +25,10 @@
 				border-radius: 5%;
 
 				padding: 20px 0px;
-				margin: 5% 5%;
+				margin: 5% 1%;
 				border: 2px solid $border;
 				background-color: #eee;
-				width: 35%;
+				width: 42%;
 				display: inline-block;
 
 				img {
@@ -38,22 +38,20 @@
 				}
 
 				@include breakpoint ($med) {
-				margin: 2%;
-				width: 17.5%;
+				margin: 1%;
+				width: 21%;
 				display: inline-block;
 				
 				}
-				
-				
+
+			
 			
 
 
 
 			text-decoration: none;
 			color: $textColor;
-			&:hover {
-				background-color: red;
-			}		
+				
 		
 		}
 
@@ -74,6 +72,11 @@
 		padding-top: 5px;
 		border-top: 1px solid $border;
 		padding-top: 40px;
+
+	}
+
+	h4 {
+		font-family: "Bitter", sans-serif;
 	}
 }
 

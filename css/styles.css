@@ -118,18 +118,19 @@ html {
     margin: 10px; }
 
 .hero {
-  max-height: 400px;
+  max-height: 600px;
   overflow: hidden;
   position: relative;
   font-family: "Bitter", serif;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1em;
   color: black; }
   .hero img {
-    max-width: 100%; }
+    max-width: 100%;
+    margin-top: -180px; }
   .hero p {
     position: absolute;
-    top: 12%;
+    top: 5%;
     right: 5%;
     text-align: right; }
     @media (min-width: 725px) {
@@ -146,17 +147,17 @@ html {
   border-bottom: 2px solid #ddd; }
   .beers p {
     display: block;
-    margin: 5% 5%; }
+    margin: 5% 2%; }
     @media (min-width: 725px) {
       .beers p {
         margin: 2%; } }
   .beers a {
     border-radius: 5%;
     padding: 20px 0px;
-    margin: 5% 5%;
+    margin: 5% 1%;
     border: 2px solid #ddd;
     background-color: #eee;
-    width: 35%;
+    width: 42%;
     display: inline-block;
     text-decoration: none;
     color: #555; }
@@ -165,11 +166,9 @@ html {
       width: 100%; }
     @media (min-width: 725px) {
       .beers a {
-        margin: 2%;
-        width: 17.5%;
+        margin: 1%;
+        width: 21%;
         display: inline-block; } }
-    .beers a:hover {
-      background-color: red; }
   .beers img {
     width: 190px;
     margin: 0 auto;
@@ -181,6 +180,8 @@ html {
     padding-top: 5px;
     border-top: 1px solid #ddd;
     padding-top: 40px; }
+  .beers h4 {
+    font-family: "Bitter", sans-serif; }
 
 body {
   font-family: 'Oswald', sans-serif; }
@@ -232,9 +233,7 @@ nav {
     text-transform: uppercase; }
     @media (min-width: 1120px) {
       nav a {
-        border: none; }
-        nav a:hover {
-          color: red; } }
+        border: none; } }
   nav ul {
     list-style: none;
     padding-left: 0px;
@@ -384,22 +383,31 @@ button {
   margin-bottom: 10px; }
 
 .styledSelect {
-  display: inline;
-  width: 50px;
-  height: 34px;
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  margin-bottom: 0px;
   overflow: hidden;
   background: url(../img/beer.png) no-repeat right #ddd;
   border: 1px solid #ccc; }
   .styledSelect select {
     background: transparent;
-    width: 100px;
+    width: 150px;
     padding: 5px;
     font-size: 16px;
     line-height: 1;
     border-radius: 0;
-    height: 34px;
+    border: 0px;
+    height: 30px;
     -webkit-appearance: none;
-    margin-bottom: 5px; }
+    margin-top: 0px; }
+
+.styledSelect {
+  margin-top: 0px; }
+
+.first {
+  margin-bottom: 10px;
+  display: inline-block; }
 
 .beerDescriptions {
   border-top: 2px solid #ddd;
@@ -456,26 +464,24 @@ button {
   border-top: 2px solid #ddd;
   border-bottom: 2px solid #ddd; }
   .beerDescriptions article {
-    display: block;
+    display: inline-block;
     text-align: center;
     padding: 20px 8%;
-    margin: 0% 1%;
+    margin: 0% 0%;
     margin-bottom: 10px;
     margin-top: 0px;
     background-color: #ddd;
     width: 100%; }
   .beerDescriptions p {
     text-align: left;
-    font-size: .8em; }
+    font-size: 1em;
+    line-height: 1.5;
+    overflow: hidden; }
   .beerDescriptions ul {
     text-decoration: none;
     list-style: none;
     text-align: left;
     font-size: .8em; }
-  .beerDescriptions img {
-    width: 190px;
-    margin: 0 auto;
-    height: 150px; }
   .beerDescriptions h2 {
     text-align: center;
     display: block; }
@@ -484,5 +490,54 @@ button {
     text-align: center;
     padding-top: 5px;
     border-top: 1px solid #ddd; }
+  .beerDescriptions h4 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: "Bitter", serif; }
+
+.about1 {
+  background-image: url("../img/conquest brewery.jpg");
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  position: center;
+  margin-right: 3%;
+  vertical-align: center; }
+
+.about2 {
+  background-image: url("../img/matthew.jpg");
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: right;
+  margin-right: 3%; }
+
+.about3 {
+  background-image: url("../img/joseph.jpg");
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: right;
+  margin-right: 3%; }
+
+@media (min-width: 1120px) {
+  .matt {
+    width: 48% !important;
+    margin-right: 3.6% !important;
+    float: left; } }
+
+@media (min-width: 1120px) {
+  .joe {
+    width: 48% !important;
+    margin-right: 0%;
+    float: left; } }
+
+.company {
+  float: left; }
+
+footer {
+  float: left;
+  clear: both;
+  width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

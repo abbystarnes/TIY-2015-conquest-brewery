@@ -34,9 +34,7 @@ nav {
 		text-transform: uppercase;
 		@include breakpoint ($large) {
 		border: none;
-		&:hover {
-			color: red;
-		}
+		
 
 			}
 	}

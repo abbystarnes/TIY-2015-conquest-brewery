@@ -1,14 +1,15 @@
 .beerDescriptions {
 	article {
 		// float: left;
-		display: block;
+		display: inline-block;
 		text-align: center;
 		padding: 20px 8%;
-		margin: 0% 1%;
+		margin: 0% 0%;
 		margin-bottom: 10px;
 		margin-top: 0px;
 		background-color: $border;
 		width: 100%;
+	
 
 				
 
@@ -17,7 +18,9 @@
 
 	p {
 		text-align: left;
-		font-size: .8em;
+		font-size: 1em;
+		line-height: 1.5;
+		overflow:hidden;
 	}	
 	
 	ul {
@@ -25,26 +28,111 @@
 		list-style: none;
 		text-align: left;
 		font-size: .8em;
+
 	}
 
 
 
-	img {
-		width: 190px;
-		margin: 0 auto;
-		height: 150px;
-	}
-
+	
 	border-top: 2px solid $border;
 	border-bottom: 2px solid $border;
 	h2 {
 		text-align: center;
 		display: block;
+
+		
 	}
 	h3 {
 		display: block;
 		text-align: center;
 		padding-top: 5px;
 		border-top: 1px solid $border;
+
+	}
+	h4 {
+		text-transform: uppercase;
+		font-size: 2em;
+		font-family: "Bitter", serif;
 	}
 }
+
+
+.about1 {
+	background-image: url("../img/conquest brewery.jpg");
+	height: 400px;
+	width: 100%;
+	background-size: cover;
+	position: center;
+	margin-right: 3%;
+	vertical-align: center;
+
+
+	
+}
+
+.about2 {
+	background-image: url("../img/matthew.jpg");
+	height: 400px;
+	width: 100%;
+	background-size: cover;
+	background-position: right;
+	margin-right: 3%;
+
+	
+	
+	
+}
+
+.about3 {
+	background-image: url("../img/joseph.jpg");
+	height: 400px; 
+	width: 100%;
+	background-size: cover;
+	background-position: right;
+	margin-right: 3%;
+
+	
+}
+
+
+.matt {
+
+	@include breakpoint ($large) {
+				
+				
+				// display:inline-block;
+				// margin-top: 70px;
+				width: 48% !important;
+				margin-right: 3.6% !important;
+				float:left;
+
+				}
+}
+
+
+.joe {
+
+	@include breakpoint ($large) {
+				// display: inline-block;
+				width: 48% !important;
+				margin-right: 0%;
+				float:left;
+
+				
+				
+				}
+}
+
+.company {
+	float: left;
+}
+
+footer {
+	float: left;
+	clear: both;
+	width: 100%;
+	// overflow:hidden;
+}
+
+
+

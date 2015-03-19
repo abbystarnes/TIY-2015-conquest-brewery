@@ -49,9 +49,6 @@ fieldset {
 		margin-right: 5%;
 		border: 1px solid $textColor;
 
-
-		
-
 	}
 
 option {
@@ -93,29 +90,41 @@ button {
 }
 
 .styledSelect {
-	display: inline;
+	display: inline-block;
 
 	select {
    background: transparent;
-   width: 100px;
+   width: 150px;
    padding: 5px;
    font-size: 16px;
    line-height: 1;
    // border: 1px solid grey;
    border-radius: 0;
-   height: 34px;
+   border: 0px;
+   height: 30px;
    -webkit-appearance: none;
-   margin-bottom: 5px;
+   margin-top: 0px;
    }
 
 
 
-   width: 50px;
-   height: 34px;
+   width: 150px;
+   height: 30px;
+   margin-bottom: 0px;
+
    overflow: hidden;
    background: url(../img/beer.png) no-repeat right #ddd;
    border: 1px solid #ccc;
    
 }
 
+
+.styledSelect{
+	margin-top: 0px;
+}
+
+.first {
+	margin-bottom: 10px;
+	display: inline-block;
+}
 
