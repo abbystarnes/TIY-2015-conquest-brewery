@@ -38,7 +38,8 @@
             </ul>
 
             <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-            <label for="nav-trigger"></label>
+            <label id="triggered" for="nav-trigger"></label>
+
         
 <!-- END NAV -->
 
@@ -47,8 +48,10 @@
     <div class="siteWrap">
 
 <!-- HEADER -->
-        <header>
+        <header class="wrapper">
+
         <h1 class="logo"><a href="index.html">Conquest Brewing</a></h1>
+        <!-- <p>History is written by the victor.</p> -->
         </header>
 <!-- END HEADER -->
 <!-- NAV -->
@@ -56,7 +59,7 @@
 
 
             <div class="wrapper">
-                    <nav>
+                    <nav class="wrapper">
                         <h2 class="invisible">Navigation</h2>
                         <ul>
                            
@@ -70,28 +73,31 @@
             <!-- END NAV -->
             <!-- HERO-->
             </div>
-                    <section class="hero">
+                    <section class="hero wrapper"> 
                         <h2 class="invisible">Featured Image and Moto</h2>
-                        <img src="img/morehorsiesV.svg" alt="Illustration of Conquest">
+                       <img src="img/finalhorses.png" alt="Featured Image">
                         <p>History is written <br> by the victor.</p>
                     </section>
             <!-- END HERO -->
             <!-- EVENTS -->
-            <ul class="events list clearfix">
-                        <h2>Weekly Events</h2>
+            <ul class=" wrapper events list clearfix">
+                        <h2 id="weekly">Weekly Events</h2>
                         <li>
                             <h3>Sunday</h3>
                             <ul>
-                                <li>KC Hot Dogs</li>
-                                <li>12 PM - 1 PM Yoga with Jean</li>
-                                <li>1 PM - 6 PM Tasting Room Hours</li>
+                                <li class="todo">KC Hot Dogs</li>
+                                <li class="todo">Yoga with Jean</li>
+                                <li class="time">12 PM - 1 PM </li>
+                                <li class="todo todo2">Tasting Room Hours</li>
+                                <li class="time">1 PM - 6 PM</li>
                             </ul>
                         </li>
                         <li>
                             <h3>Monday</h3>
                             <ul>
-                                <li>KC Hot Dogs</li>
-                                <li>4pm $3 Pints!</li>
+                                <li class="todo">KC Hot Dogs</li>
+                                <li class="todo">$3 Pints!</li>
+                                <li class="time">4 PM</li>
                             </ul>
                         </li>
                         <li>
@@ -101,29 +107,31 @@
                             <h3>Wednesday</h3>
                             <ul>
                                 
-                                <li>Trivia 7:30 PM</li>
-                                <li>Wings and Ale</li>
+                                <li class="todo">Trivia</li>
+                                <li class="time">7:30 PM</li>
+                                <li class="todo">Wings and Ale</li>
                             </ul>
                         </li>
                         <li>
                             <h3>Thursday</h3>
                             <ul>
 
-                                <li>5PM KC Hot Dogs</li>
+                                <li class="todo">KC Hot Dogs</li>
+                                <li class="time">5PM</li>
                             </ul>
                         </li>
                         <li>
                              <h3>Friday</h3>
                             <ul>
                                
-                                <li>The Belgian Waffle Truck</li>
+                                <li class="todo">The Belgian Waffle Truck</li>
                             </ul>
                         </li>
                         <li>
                             <h3>Saturday</h3>
                             <ul>
                         
-                                <li>KC Hot Dogs</li>
+                                <li class="todo">KC Hot Dogs</li>
                             </ul>
                         </li>
                       
@@ -139,52 +147,55 @@
                         <p>Our tried and true everyday favorites. Ranging from the light, effervescent Artemis Blonde to the piney Warrior Heart IPA. We like to keep a stock that can please anyone from casual to veteran beer enthusiast.</p>
 
                             <a href="#"><article>
+                            <h4>Artemis Blonde</h4>
                                 <img src="img/beer4.svg" alt="beer">
-                                <h4>Artemis Blonde</h4>
+                                
                                 
 
                             </article></a>
 
                             <a href="#"><article>
+                            <h4>Sacred Heart IPA</h4>
                                 <img src="img/beer2.svg" alt="beer">
-                                <h4>Sacred Heart IPA</h4>
+                                
                                 
                             </article></a>
 
                             <a href="#"><article>
-                                
+                             <h4>Medusa Stout</h4>   
                                 <img src="img/beer3.svg" alt="beer">
-                                <h4>Medusa Stout</h4>
+                                
                             </article></a>
 
                             <a href="#"><article>
-                                
-                                <img src="img/beer.svg" alt="beer">
                                 <h4>Warrior IPA</h4>
+                                <img src="img/beer.svg" alt="beer">
+                                
                             </article></a>
-
+                        <div class="seasonal">
                         <h3>Seasonal</h3>
                         <p>Rich and flavorful lagers perfect for a cold winter's night. We often look to military legends for inspiration when fighting off the chilling weather.</p>
                             <a href="#"><article>
-                                
-                                <img src="img/beer5.svg" alt="beer">
                                 <h4>Old Naps</h4>
+                                <img src="img/beer5.svg" alt="beer">
+                                
                             </article></a>
 
                             <a href="#"><article>
-                               
+                               <h4>Frederick</h4>
                                 <img src="img/beer6.svg" alt="beer">
-                                <h4>Frederick</h4>
+                                
                             </article></a>
-
+                         </div>
                     
-
+                        <div class="IPA">
                         <h3>Seasonal IPA</h3>
                         <p>For the coldest of nights we offer a cure pitch black in body, yeilding weapons of chocolate malt, roasted barley, and oatmeal to wreak havoc on your tastebuds.</p>
                             <a href="#"> <article>                   
-                                <img src="img/beer3.svg" alt="beer">
                                 <h4>Brutus</h4>
-                            </article></a>
+                                <img src="img/beer3.svg" alt="beer">
+                                
+                            </article></a></div>
                     </section>
             <!-- END BEERS -->
             
@@ -215,7 +226,7 @@
 <!-- END TESTIMONIALS -->
 <!-- FOOTER -->
 </div>
-                    <footer>
+                    <footer class="wrapper">
 
                 
                 
@@ -225,44 +236,74 @@
                         <li class="listItem">
                             <h2 class="invisible">Location</h2>
                             <ul class="location list">
-                                <li>Location</li>
+                                <li><h3>Location</h3></li>
                                 <li>647 S. Stadium Rd.</li>
                                 <li>Columbia, SC 29201</li>
                                 <li><a href="#"> <i class="fa fa-map-marker"></i> Map It</a></li>
                             </ul>
-                        </li>
-                    
-                    
-                        <li class="listItem">
-                            <h2 class="invisible">Hours</h2>
-                            <ul class="hours list">
-                                <li>Hours</li>
-                                <li>Sun 1-4 PM</li>
-                                <li>M Closed</li>
-                                <li>T-TH 4- 9 PM</li>
-                                <li>F 4-10 PM</li>
-                                <li>Sat 11-10 PM</li>
-                            </ul>
-                        </li>
-                    
-                    
-                        <li class="listItem">
-                            <ul class="media clearfix">
 
+                            <h3 class="contactUs">CONTACT US</h3>
+                             <ul class="media clearfix">
+
+                             
                                 <li>
-                                    <a href="mailto:youremailaddress">Email Us</a>
-                                   
-                                </li>
-                                <li>
+                                    <a href="mailto:info@conquestbrewing.com"><i class="fa fa-envelope-square"></i></a>
                                     <a href="https://www.facebook.com/conquestbrewingcompany"><i class="fa fa-facebook-square"></i></a>
                                 
                                     <a href="https://twitter.com/conquestbrewing"><i class="fa fa-twitter-square"></i></a></li>
-                                   
-                                
-                                
-                                
-                            </ul>
+                                </ul>
+
                         </li>
+                    
+                    
+                        <li class="listItem">
+                            <h3>Hours</h3>
+                           <table class="footerHours">
+                               
+                               <tr>
+                                   <td>
+                                       Sunday
+                                   </td>
+                                   <td>1:00 - 4:00 PM</td>
+                               </tr>
+                               <tr>
+                                   <td>
+                                       Monday
+                                   </td>
+                                   <td>CLOSED</td>
+                               </tr>
+                               <tr>
+                                   <td>Tuesday</td>
+                                   <td>4:00 - 9:00 PM</td>
+                               </tr>
+                               <tr>
+                                   <td>
+                                       Wednesday
+                                   </td>
+                                   <td>
+                                       4:00 - 9:00 PM
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td>Thursday</td>
+                                   <td>4:00 - 9:00 PM</td>
+                               </tr>
+                               <tr>
+                                   <td>Friday</td>
+                                   <td>4:00 - 10:00 PM</td>
+                               </tr>
+                               <tr>
+                                   <td>Saturday</td>
+                                   <td>11:00 AM - 10:00 PM</td>
+                               </tr>
+                               
+                           </table>
+                        </li>
+
+                      
+                    
+                    
+                       
                     </ul>
 
                     </div>

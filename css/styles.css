@@ -1,14 +1,15 @@
-@import url("http://fonts.googleapis.com/css?family=Bitter|Oswald:400,700");
+@import url("http://fonts.googleapis.com/css?family=Cuprum:400,700,700italic,400italic|Pacifico");
 .logo {
   background-position: center;
   text-align: center;
-  margin-bottom: 0px;
+  padding-bottom: 1em;
+  margin-bottom: 0em;
   margin-top: 0px; }
   .logo a {
     background-image: url(../img/logo.png);
     background-size: 110px 201px;
-    height: 110px;
-    width: 201px;
+    height: 175px;
+    width: 302px;
     margin: 0 auto;
     display: inline-block;
     background-repeat: no-repeat;
@@ -22,9 +23,23 @@
 header {
   padding-top: 20px;
   width: 100%;
-  height: 110px;
   display: block;
-  margin-bottom: 30px; }
+  z-index: 100;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  header p {
+    color: white;
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    font-size: 3em; }
+    @media (min-width: 725px) {
+      header p {
+        font-size: 5em; } }
+    @media (min-width: 1120px) {
+      header p {
+        font-size: 7em; } }
 
 .mobileNav {
   list-style: none;
@@ -59,15 +74,23 @@ header {
     .nav-trigger {
       display: none; } }
 
+#triggered:after {
+  content: "MENU";
+  display: block;
+  margin-left: 45px;
+  margin-top: .5em;
+  width: 200px;
+  height: 200px; }
+
 label[for="nav-trigger"] {
   position: fixed;
   top: 15px;
   left: 15px;
   z-index: 2;
-  width: 40px;
+  width: 100px;
   height: 40px;
   cursor: pointer;
-  background: #fff url("../img/hamburger.svg") no-repeat center;
+  background: #fff url("../img/hamburger.svg") no-repeat 15% 50%;
   border-radius: 2px; }
   @media (min-width: 1120px) {
     label[for="nav-trigger"] {
@@ -118,33 +141,42 @@ html {
     margin: 10px; }
 
 .hero {
-  max-height: 600px;
+  border: 5px solid black;
   overflow: hidden;
+  z-index: -50;
   position: relative;
-  font-family: "Bitter", serif;
-  text-transform: uppercase;
+  font-family: "Pacifico", cursive;
   font-size: 1em;
   color: black; }
   .hero img {
     max-width: 100%;
-    margin-top: -180px; }
+    height: 250px;
+    margin-left: -25%; }
+    @media (min-width: 725px) {
+      .hero img {
+        height: 500px; } }
+    @media (min-width: 1120px) {
+      .hero img {
+        height: 600px; } }
   .hero p {
     position: absolute;
     top: 5%;
     right: 5%;
-    text-align: right; }
+    text-align: right;
+    font-size: 1.5em; }
     @media (min-width: 725px) {
       .hero p {
-        font-size: 1.8em; } }
+        font-size: 2.5em; } }
     @media (min-width: 1120px) {
       .hero p {
-        font-size: 2.8em; } }
+        font-size: 4em; } }
 
 .beers {
   text-align: center;
   padding-bottom: 20px;
-  border-top: 2px solid #ddd;
-  border-bottom: 2px solid #ddd; }
+  width: 100%;
+  margin: 0 auto;
+  border: 5px solid black; }
   .beers p {
     display: block;
     margin: 5% 2%; }
@@ -155,12 +187,11 @@ html {
     border-radius: 5%;
     padding: 20px 0px;
     margin: 5% 1%;
-    border: 2px solid #ddd;
-    background-color: #eee;
+    border: 5px solid black;
     width: 42%;
     display: inline-block;
     text-decoration: none;
-    color: #555; }
+    color: black; }
     .beers a img {
       margin: 0 auto;
       width: 100%; }
@@ -169,28 +200,53 @@ html {
         margin: 1%;
         width: 21%;
         display: inline-block; } }
+    @media (min-width: 1120px) {
+      .beers a:hover {
+        background-color: red;
+        transition: .5s ease; } }
   .beers img {
-    width: 190px;
+    width: 240px;
     margin: 0 auto;
     height: 150px; }
   .beers h2 {
-    text-align: center; }
+    text-align: center;
+    padding-top: 1em;
+    margin-top: 0px; }
   .beers h3 {
     text-align: center;
-    padding-top: 5px;
-    border-top: 1px solid #ddd;
-    padding-top: 40px; }
+    padding-top: 2em;
+    font-size: 1.5em; }
   .beers h4 {
-    font-family: "Bitter", sans-serif; }
+    font-size: 1.25em; }
+
+@media (min-width: 725px) {
+  .seasonal {
+    width: 49%;
+    display: inline-block;
+    padding-right: 1%; }
+    .seasonal a {
+      width: 42%; } }
+
+@media (min-width: 725px) {
+  .IPA {
+    width: 49%;
+    display: inline-block; }
+    .IPA a {
+      width: 42%; } }
+
+.time {
+  font-weight: 400;
+  margin-bottom: 1em; }
+
+.todo {
+  font-weight: bold;
+  font-size: 1.25em; }
 
 body {
-  font-family: 'Oswald', sans-serif; }
-  body h2 {
-    text-transform: uppercase; }
-  body h3 {
-    text-transform: uppercase; }
+  font-family: 'Cuprum', sans-serif;
+  font-size: 1em; }
 
-html, html a {
+footer, footer a, .events {
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
@@ -202,15 +258,28 @@ html, html a {
   display: none; }
 
 .wrapper {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   max-width: 1080px; }
 
+h2 {
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold; }
+
+h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+h4 {
+  font-size: 1em; }
+
 nav {
-  padding-top: 30px;
+  padding-top: 15px;
   display: none;
-  width: 100%;
-  margin-top: 10px; }
+  width: 100%; }
   @media (min-width: 1120px) {
     nav {
       display: inline-block; } }
@@ -224,8 +293,9 @@ nav {
     margin-bottom: 5px;
     text-decoration: none;
     list-style: none;
-    font-size: 1em;
-    color: #555;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
     border: 1px solid #ddd;
     display: block;
     padding: 10px;
@@ -245,50 +315,55 @@ nav {
 
 .events {
   display: block;
-  padding-left: 0px;
-  max-width: 1080px;
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: 20px;
-  margin-top: 30px; }
-  .events h2 {
-    margin-bottom: 0px;
-    text-align: center; }
+  padding-bottom: 2em;
+  padding-left: 5%;
+  text-align: center;
+  color: white;
+  background-color: black; }
+  .events td {
+    padding-right: 2em; }
+  .events h3 {
+    text-align: left; }
   .events ul {
     display: inline-block;
     padding-left: 0px;
-    vertical-align: top; }
+    vertical-align: top;
+    margin: 0 auto;
+    width: 100%;
+    text-align: left; }
     .events ul li {
-      display: block;
+      display: inline-block;
       padding-left: 0px;
-      width: 100%;
-      text-align: center;
+      text-align: left;
       margin-top: 0px; }
   .events li {
     margin-top: 20px;
-    display: inline;
-    float: left;
+    display: inline-block;
     vertical-align: top;
-    width: 100%;
-    text-align: center; }
-    @media (min-width: 1120px) {
-      .events li {
-        width: 14.285%; } }
+    width: 120px;
+    text-align: left; }
 
 footer {
+  display: block;
   background-color: #111;
-  padding: 20px;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 20px;
-  color: white;
+  width: 100%;
+  text-align: left;
+  padding-top: 4em;
+  padding-bottom: 4em;
   color: white; }
   footer .fa-facebook-square {
+    color: #3b5998;
+    font-size: 2.5em;
+    margin-right: .25em; }
+  footer .fa-twitter-square {
+    color: #4099ff;
+    font-size: 2.5em; }
+  footer .fa-envelope-square {
     color: white;
     font-size: 2.5em;
-    margin-right: 10px; }
-  footer .fa-twitter-square {
-    color: white;
-    font-size: 2.5em; }
+    margin-right: .25em; }
   footer li {
     list-style: none; }
   footer a {
@@ -297,30 +372,44 @@ footer {
 
 .listItem {
   display: inline-block;
-  margin-top: 20px;
+  text-align: left;
   vertical-align: top;
-  width: 100%; }
-  @media (min-width: 725px) {
-    .listItem {
-      width: 32%; } }
+  font-size: .85em;
+  padding-right: 5%; }
+  .listItem:nth-child(2) {
+    padding-right: 0px; }
 
-.media li {
-  margin-bottom: 10px; }
+.media {
+  margin-top: 1em;
+  padding-left: 0px; }
+  .media li {
+    margin-bottom: 10px; }
 
 .footerList {
   margin-bottom: 0px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0px; }
+  display: inline;
+  text-align: center;
+  padding-left: 5%; }
 
 .hours {
   padding-left: 0px; }
 
-.media {
-  padding-left: 0px; }
+.contacts {
+  padding-left: 5%; }
 
 .location {
   padding-left: 0px; }
+
+.footerHours td {
+  padding: .25em; }
+  .footerHours td td:first-child {
+    padding-right: 50px; }
+
+table td:first-child {
+  padding-right: .75em; }
+
+.contactUs {
+  padding-top: 1.8em; }
 
 .testimonials {
   display: inline-block; }
@@ -419,7 +508,6 @@ button {
     margin: 0% 1%;
     margin-bottom: 10px;
     margin-top: 0px;
-    background-color: #ddd;
     width: 100%; }
     @media (min-width: 725px) {
       .beerDescriptions .beerCard {
@@ -470,7 +558,6 @@ button {
     margin: 0% 0%;
     margin-bottom: 10px;
     margin-top: 0px;
-    background-color: #ddd;
     width: 100%; }
   .beerDescriptions p {
     text-align: left;
@@ -493,7 +580,7 @@ button {
   .beerDescriptions h4 {
     text-transform: uppercase;
     font-size: 2em;
-    font-family: "Bitter", serif; }
+    font-family: "Cuprum", serif; }
 
 .about1 {
   background-image: url("../img/conquest brewery.jpg");
@@ -539,5 +626,8 @@ footer {
   float: left;
   clear: both;
   width: 100%; }
+
+* {
+  box-sizing: border-box; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -12,7 +12,14 @@
 @import "description";
 @import "about";
 
-@import url("http://fonts.googleapis.com/css?family=Bitter|Oswald:400,700");
-
+// @import url("http://fonts.googleapis.com/css?family=Bitter|Oswald:400,700");
+@import url("http://fonts.googleapis.com/css?family=Cuprum:400,700,700italic,400italic|Pacifico");
 // font-family: 'Bitter', serif; 
 // font-family: 'Oswald', sans-serif;
+// font-family: 'Cuprum', sans-serif;
+// font-family: 'Pacifico', cursive;
+
+
+* {
+	box-sizing: border-box;
+}

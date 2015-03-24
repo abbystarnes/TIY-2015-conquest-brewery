@@ -1,15 +1,10 @@
 body {
-	font-family: 'Oswald', sans-serif;
-	h2 {
-		text-transform: uppercase;
-	}
-	h3 {
-		text-transform: uppercase;
-	}
-
+	font-family: 'Cuprum', sans-serif;
+	
+	font-size: 1em;
 }
 
-html, html a {
+footer, footer a, .events {
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
@@ -25,9 +20,24 @@ html, html a {
 }
 
 .wrapper {
-	 width: 90%;
+	 width: 100%;
 	margin: 0 auto;
 	max-width: 1080px;
 }
 
+h2 {
+		margin-bottom: 0px;
+		text-align: center;
+		font-size: 2em;
+		font-weight: bold;
+	}
 
+	h3 {
+		font-size: 1.25em;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	h4 {
+		font-size: 1em;
+		}
