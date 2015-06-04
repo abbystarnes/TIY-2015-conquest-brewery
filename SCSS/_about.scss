@@ -50,7 +50,8 @@
 
 	}
 	h4 {
-		text-transform: uppercase;
+		// text-transform: uppercase;
+		text-transform: lowercase;
 		font-size: 2em;
 		font-family: "Cuprum", serif;
 	}
@@ -96,6 +97,9 @@
 
 
 .matt {
+
+
+
 
 	@include breakpoint ($large) {
 				
