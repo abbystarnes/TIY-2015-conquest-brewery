@@ -145,7 +145,7 @@ html {
   z-index: -50;
   position: relative;
   font-family: "Pacifico", cursive;
-  font-size: 1em;
+  font-size: 1rem;
   color: black; }
   .hero img {
     max-width: 100%;
@@ -182,7 +182,6 @@ html {
       .beers p {
         margin: 2%; } }
   .beers a {
-    border-radius: 5%;
     padding: 20px 0px;
     margin: 5% 1%;
     width: 42%;
@@ -199,7 +198,7 @@ html {
         display: inline-block; } }
     @media (min-width: 1120px) {
       .beers a:hover {
-        background-color: red;
+        background-color: #f1f1f1;
         transition: .5s ease; } }
   .beers img {
     width: 240px;
@@ -259,7 +258,7 @@ footer, footer a {
   display: none; }
 
 .wrapper {
-  width: 100%;
+  width: 90%;
   margin: 0 auto; }
 
 h2 {
