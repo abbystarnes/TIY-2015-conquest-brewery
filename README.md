@@ -1,4 +1,4 @@
-![Conquest Brewery logo](Images/conquestlogo.png)
+![Conquest Brewery logo](img/conquestlogo.png)
 
 # Conquest Brewery
 > redesign and responsive build of local brewery website
